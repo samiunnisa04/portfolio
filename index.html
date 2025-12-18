@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Samiunnisa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            animation: fadeInBody 1s ease-in;
+        }
+
+        .hero-section {
+            padding: 60px 0;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        .headshot img {
+            width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: zoomIn 1.5s ease;
+        }
+
+        .headshot img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .links a {
+            margin: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+            animation: fadeInButton 0.8s ease forwards;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #198754;
+            color: white;
+        }
+
+        .btn-outline-warning:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .btn-outline-info:hover {
+            background-color: #0dcaf0;
+            color: white;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInCard 1s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease;
+        }
+
+        footer {
+            background-color: #212529;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        #skills .text-center {
+            min-width: 100px;
+        }
+
+        .about-text {
+            text-align: justify;
+            word-spacing: normal;
+        }
+
+        @media (max-width: 576px) {
+            .about-text {
+                text-align: left;
+                font-size: 15px;
+            }
+        }
+
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInButton {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInCard {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mohammad Samiunnisa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/samiunnisa04"
+                            target="_blank"><i class="fab fa-github"></i> Github</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://www.linkedin.com/in/mohammad-samiunnisa-07613727b/" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:mdsamrin04@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Hi, I'm Mohammad Samiunnisa</h2>
+                    <p class="lead">Aspiring Full-Stack Developer</p>
+                    <div class="links">
+                        <a href="#skills" class="btn btn-outline-primary"><i class="fas fa-code"></i> Skills</a>
+                        <a href="#projects" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Projects</a>
+                        <a href="#certifications" class="btn btn-outline-success"><i class="fas fa-certificate"></i>
+                            Certifications</a>
+                        <a href="#contact" class="btn btn-outline-info"><i class="fas fa-address-card"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="headshot">
+                        <img src="Images/image.png" alt="Mohammad Samiunnisa" class="rounded float-right"
+                            style="width: 300px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-11 col-sm-12">
+        <p class="fw-bold">Hello! I'm MD.Samiunnisa 👋🏻</p>
+        <p class="about-text">
+          I'm an enthusiastic <strong>Electronics and Communication Engineering (ECE)</strong> student with a deep interest in software development and emerging technologies.
+        </p>
+        <p class="about-text">
+          I specialize in <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Java</strong>, and I'm proficient in frameworks like  <strong>React</strong>.
+        </p>
+        <p class="about-text">
+          A tech enthusiast at heart, I enjoy turning ideas into real-world applications and continuously improving my skills. My ultimate goal is to become a versatile and impactful <strong>Full Stack Developer</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <div class="text-center">
+                    <i class="fab fa-html5 fa-3x text-danger"></i>
+                    <h5 class="mt-2">HTML</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                    <h5 class="mt-2">CSS</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-js fa-3x text-warning"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-python fa-3x text-primary"></i>
+                    <h5 class="mt-2">Python</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-node-js fa-3x text-success"></i>
+                    <h5 class="mt-2">Node.js</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-react fa-3x text-primary"></i>
+                    <h5 class="mt-2">React JS</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border-success border-1">
+                            <img src="hospital.png" class="card-img-top" alt="Quick queue hospital Project">
+                            <div class="card-body">
+                                <h5 class="card-title">website to reduce queue waiting time in hospitals</h5>
+                                <p class="card-text">Built using React, this project reduces patient wait times
+                                    </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border border-info border-1">
+                            <img src="shoe.png" class="card-img-top" alt="shoe fusion Project">
+                            <div class="card-body">
+                                <h5 class="card-title">shoe fusion</h5>
+                                <p class="card-text">A real time shoe website built with HTML, CSS, and JavaScript 
+                                    browse properties.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/drive/folders/12IztIP_-0tUbTeTeOBW9aY9cmI4YZ8W2?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card border-info border-1">
+                            <img src="vlsi.png" class="card-img-top"
+                                alt="VLSI">
+                            <div class="card-body">
+                                <h5 class="card-title">VLSI – Skilldizire</h5>
+                                <p class="card-text">2-months VLSI internship </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1oBFuZzaf0IZFf3ZJxrgM8AX20iwZujcA/view?usp=drive_link"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card border-dark border-1">
+                            <img src="vlsi2.png" class="card-img-top" alt="VLSI frontend RTL">
+                            <div class="card-body">
+                                <h5 class="card-title">VLSI frontend RTL – BIST Technologies PVT.LTD</h5>
+                                <p class="card-text">120 hours internship focused on VLSI frontend RTL design.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1oBFuZzaf0IZFf3ZJxrgM8AX20iwZujcA/view?usp=drive_link"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border-success border-1">
+                            <img src="mern.png" class="card-img-top" alt="mern stack Internship">
+                            <div class="card-body">
+                                <h5 class="card-title">mern stack – Study Owl</h5>
+                                <p class="card-text">Mern stack internship focused on building web applications
+                                    .</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-primary border-1">
+                            <img src="ibm.png" class="card-img-top" alt="Artificial intelligence Fundamentals">
+                            <div class="card-body">
+                                <h5 class="card-title"> Artificial intelligence Fundamentals– IBM</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-danger border-1">
+                            <img src="RM.png" class="card-img-top" alt="research Methodlogy Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">research Methodlogy – NPTEL</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-success border-1">
+                            <img src="oracle.png" class="card-img-top" alt="oracle Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">oracle </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-warning border-1">
+                            <img src="csa.png" class="card-img-top"
+                                alt="Certified system administrator Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">Certified system administrator Certificate –ServiceNow</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a 
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-info border-1">
+                            <img src="CAD.png" class="card-img-top" alt="Certified application Developer Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">Certified application Developer – –ServiceNow</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-3 text-start">
+                    <h4>Contact Info</h4>
+                    <p>Email: <a href="mailto:mdsamrin04@gmail.com">mdsamrin04@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-samiunnisa-07613727b/" target="_blank">View
+                            Profile</a></p>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <h4>Send a Message</h4>
+                    <form id="contact-form">
+                        <input type="text" class="form-control mb-2" name="name" placeholder="Your Name" required>
+                        <input type="email" class="form-control mb-2" name="email" placeholder="Your Email" required>
+                        <textarea class="form-control mb-2" name="message" placeholder="Your Message"
+                            required></textarea>
+                        <button class="btn btn-primary w-100" type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Mohammad Samiunnisa | All rights reserved</p>
+    </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOe7PL1-F2M73ZkE5WwhvrUKd6lZg_o9fSVv41e50hKMC3Z0EobBpb_Wx9OVzNZWM4/exec';
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    alert("Message sent successfully!");
+                    form.reset();
+                })
+                .catch(error => {
+                    alert("Error sending message.");
+                    console.error(error);
+                });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
